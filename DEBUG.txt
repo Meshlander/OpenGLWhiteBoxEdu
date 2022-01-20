@@ -1,0 +1,19 @@
+
+
+#version 430
+
+out vec4 frag_colour;
+
+uniform float GlobalVerts[3];
+
+in vec3 ColorToFragShader;
+
+void main() 
+{
+	frag_colour = vec4( 0.002 * gl_FragCoord.x, GlobalVerts[0], 0.9, 1.0) * ColorToFragShader.y;
+};
+
+//  ColorIn;
+};
+
+// 
